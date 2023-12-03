@@ -217,9 +217,9 @@ h3.nav_name {
  background: url("https://i.pinimg.com/originals/a7/05/09/a70509d6a6e2b5c4200cf03bc935128a.gif");
  background-repeat: no-repeat;
  background-size: cover;
- /* width: 1510px; */
- width: 104%;
- height: 100vh;
+ width: 100%;
+ height: max-content;
+ margin-bottom: 100px;
 }
 
 .content {
@@ -385,7 +385,7 @@ h3.nav_name {
 
 .abttxt {
   display: flex;
-  margin-bottom: -25px;
+  margin-bottom: -6px;
   padding-bottom: 5px;
 }
 
@@ -431,6 +431,7 @@ h3.nav_name {
 .accordion-item {
   border: 4px solid transparent;
   background:linear-gradient(90deg, #ff914d, #e4622b,#de2b38) border-box;
+  width: 95%;
 }
 
 .accordion-button{
@@ -468,6 +469,7 @@ h3.nav_name {
   align-items: center;
   gap: 20px;
   color: #000;
+  width: 100%;
 }
 
 .col .abtme {
@@ -686,7 +688,7 @@ text-align: center;
 
 @media screen and (max-width: 767px) {
   body {
-    width: 96%;
+    width: 100%;
   } 
 
   .nav__icon {
@@ -713,7 +715,11 @@ text-align: center;
 
 @media (max-width:475.99px) {
   @media (min-width:300px) {
-  
+
+    body {
+      width: 100%;
+    } 
+
     .nav__list {
       gap: 15px;
     }
@@ -751,15 +757,19 @@ text-align: center;
 
     @media (max-width:370px) {
       .container.description p{
-        width: 285px;
+        width: 280px;
       }
 
       .section#home {
-        height: 93vh;
+        height: max-content;
       }
     }
 
     @media (min-width:370px) {
+      body {
+        width: 100%;
+      } 
+
       .container.description p{
         width: 87%;
       }
@@ -793,10 +803,6 @@ text-align: center;
       margin-right: 5px;
     }
 
-    /* #about {
-      min-height: 170vh;
-    } */
-
     .accordion {
      width: 95%;
      margin-left: 10px;
@@ -807,6 +813,10 @@ text-align: center;
 
 @media (max-width: 967px) {
   @media  (min-width:476px) {
+    body {
+      width: 100%;
+    } 
+
     .homebg img {
       width: 510px;
     }
@@ -816,13 +826,17 @@ text-align: center;
     }
 
     #about {
-      min-height: 150vh;
+      height: max-content;
     }
   }
 }
 
 @media (max-width: 600px) {
   @media (min-width:476px) {
+    body {
+      width: 100%;
+    } 
+  
     .content {
       position: relative;
       background-position: center;
@@ -862,7 +876,7 @@ text-align: center;
     }
 
     .section#home {
-      height: 93vh;
+      height: max-content;
     }
 /* 
     #about {
@@ -873,6 +887,10 @@ text-align: center;
 
 @media (max-width: 760px) {
   @media (min-width:600px) {
+    body {
+      width: 100%;
+    } 
+  
     .content {
       position: relative;
       background-position: center;
@@ -908,7 +926,7 @@ text-align: center;
     } */
 
       .section#home {
-        height: 93vh;
+        height: max-content;
       }
 
       /* #about {
@@ -919,6 +937,10 @@ text-align: center;
 
 @media (max-width: 950px) {
   @media (min-width:760px) {
+    body {
+      width: 100%;
+    } 
+  
     .content {
       position: relative;
       background-position: center;
@@ -943,7 +965,7 @@ text-align: center;
 
     
     .section#home {
-      height: 98vh;
+      height: max-content;
     }
 /* 
     #about {
@@ -954,6 +976,10 @@ text-align: center;
 
 @media (max-width: 1080px) {
   @media (min-width:950px) {
+    body {
+      width: 100%;
+    } 
+  
     .content {
       position: relative;
       background-position: center;
@@ -975,6 +1001,10 @@ text-align: center;
 
 /*medium devices*/
 @media screen and (min-width: 576px) {
+  body {
+    width: 100%;
+  } 
+
   .nav__list {
     justify-content: center;
     column-gap: 3rem;
@@ -991,10 +1021,14 @@ text-align: center;
 
 @media screen and (min-width: 767.10px) {
   body {
+    width: 100%;
+  } 
+  body {
     margin: 0;
   }
   .section {
     padding: 7rem 0 2rem;
+    padding-bottom: 80px;
   }
   .nav {
     height: calc(var(--header-height) + 1.5rem);
@@ -1022,14 +1056,6 @@ text-align: center;
     border-radius: 50%;
   }
 
-  body {
-    width: 96%;
-  }
-
-  /* #about {
-    min-height: 130vh;
-  } */
-
 }
 
 
@@ -1037,7 +1063,10 @@ text-align: center;
 @media screen {
   @media  (max-width: 1000px) {
     @media (min-width: 767px) {
- 
+      body {
+        width: 100%;
+      } 
+
       .nav__list, .nav__link {
         margin-left: -20px;
        
@@ -1056,6 +1085,10 @@ text-align: center;
 
 
 @media screen and (min-width: 1024px) {
+  body {
+    width: 100%;
+  } 
+
   .homebg img {
     width: 800px;
   }
@@ -1080,10 +1113,6 @@ text-align: center;
   .abttxt {
     margin-top: -15px;
   }
-  
-  /* #about {
-    min-height: 105vh;
-  } */
 
 
 }
