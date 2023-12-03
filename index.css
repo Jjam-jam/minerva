@@ -218,7 +218,7 @@ h3.nav_name {
  background-repeat: no-repeat;
  background-size: cover;
  width: 100%;
- height: max-content;
+ height: 100vh;
  margin-bottom: 100px;
 }
 
@@ -761,7 +761,7 @@ text-align: center;
       }
 
       .section#home {
-        height: max-content;
+        height: 100vh;
       }
     }
 
@@ -876,7 +876,7 @@ text-align: center;
     }
 
     .section#home {
-      height: max-content;
+      height: 100vh;
     }
 /* 
     #about {
@@ -926,7 +926,7 @@ text-align: center;
     } */
 
       .section#home {
-        height: max-content;
+        height: 100vh;
       }
 
       /* #about {
@@ -965,7 +965,7 @@ text-align: center;
 
     
     .section#home {
-      height: max-content;
+      height: 100vh;
     }
 /* 
     #about {
