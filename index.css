@@ -129,6 +129,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding-top: 5px;
+  width: 100%;
 }
 
 h3.nav_name {
@@ -720,6 +721,10 @@ text-align: center;
       width: 100%;
     } 
 
+    .nav, .header {
+      width: 100%;
+    }
+
     .nav__list {
       gap: 15px;
     }
@@ -759,10 +764,14 @@ text-align: center;
       .container.description p{
         width: 280px;
       }
+      .nav, .header {
+        width: 100%;
+      }
 
       .section#home {
         height: 100vh;
       }
+      
     }
 
     @media (min-width:370px) {
@@ -772,6 +781,10 @@ text-align: center;
 
       .container.description p{
         width: 87%;
+      }
+      
+      .nav, .header {
+        width: 100%;
       }
     }
 
@@ -817,6 +830,10 @@ text-align: center;
       width: 100%;
     } 
 
+    .nav, .header {
+      width: 100%;
+    }
+
     .homebg img {
       width: 510px;
     }
@@ -836,6 +853,10 @@ text-align: center;
     body {
       width: 100%;
     } 
+
+    .nav, .header {
+      width: 100%;
+    }
   
     .content {
       position: relative;
@@ -890,6 +911,10 @@ text-align: center;
     body {
       width: 100%;
     } 
+
+    .nav, .header {
+      width: 100%;
+    }
   
     .content {
       position: relative;
@@ -940,6 +965,10 @@ text-align: center;
     body {
       width: 100%;
     } 
+
+    .nav, .header {
+      width: 100%;
+    }
   
     .content {
       position: relative;
@@ -979,6 +1008,10 @@ text-align: center;
     body {
       width: 100%;
     } 
+
+    .nav, .header {
+      width: 100%;
+    }
   
     .content {
       position: relative;
@@ -1004,6 +1037,10 @@ text-align: center;
   body {
     width: 100%;
   } 
+
+  .nav, .header {
+    width: 100%;
+  }
 
   .nav__list {
     justify-content: center;
@@ -1033,6 +1070,11 @@ text-align: center;
   .nav {
     height: calc(var(--header-height) + 1.5rem);
   }
+
+  .nav, .header {
+    width: 100%;
+  }
+
   .nav_img {
     width: 60px;
 }
@@ -1067,6 +1109,10 @@ text-align: center;
         width: 100%;
       } 
 
+      .nav, .header {
+        width: 100%;
+      }
+
       .nav__list, .nav__link {
         margin-left: -20px;
        
@@ -1089,6 +1135,10 @@ text-align: center;
     width: 100%;
   } 
 
+  .nav, .header {
+    width: 100%;
+  }
+  
   .homebg img {
     width: 800px;
   }
