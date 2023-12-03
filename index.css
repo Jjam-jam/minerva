@@ -56,14 +56,15 @@ h1, h2, h3,h4,h5,h6,p, .h1,.h2,.h3,.h4,.h5,.h6{
 
 body, html {
   width: 100%;
+  height: max-content;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
 
 body {
-  margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
@@ -250,10 +251,12 @@ h3.nav_name {
 
 .home-container {
   width: 500px;
+  margin-left: -10px;
 }
 
 .myName {
   font-weight: 600;
+  padding-right: 60px;
   color: var(--title-color);
 }
 
@@ -688,10 +691,14 @@ text-align: center;
 /*media queries | responsive */
 
 @media screen and (max-width: 767px) {
-  body {
-    width: 100%;
-  } 
-
+ 
+body, html {
+  width: 100%;
+  height: max-content;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
   .nav__icon {
     padding-top: 12px;
   }
@@ -717,9 +724,13 @@ text-align: center;
 @media (max-width:475.99px) {
   @media (min-width:300px) {
 
-    body {
+    body, html {
       width: 100%;
-    } 
+      height: max-content;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
 
     .nav, .header {
       width: 100%;
@@ -775,9 +786,13 @@ text-align: center;
     }
 
     @media (min-width:370px) {
-      body {
-        width: 100%;
-      } 
+    body, html {
+  width: 100%;
+  height: max-content;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 
       .container.description p{
         width: 87%;
@@ -826,9 +841,13 @@ text-align: center;
 
 @media (max-width: 967px) {
   @media  (min-width:476px) {
-    body {
+    body, html {
       width: 100%;
-    } 
+      height: max-content;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
 
     .nav, .header {
       width: 100%;
@@ -850,9 +869,13 @@ text-align: center;
 
 @media (max-width: 600px) {
   @media (min-width:476px) {
-    body {
+    body, html {
       width: 100%;
-    } 
+      height: max-content;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
 
     .nav, .header {
       width: 100%;
@@ -908,9 +931,13 @@ text-align: center;
 
 @media (max-width: 760px) {
   @media (min-width:600px) {
-    body {
+    body, html {
       width: 100%;
-    } 
+      height: max-content;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
 
     .nav, .header {
       width: 100%;
@@ -962,9 +989,13 @@ text-align: center;
 
 @media (max-width: 950px) {
   @media (min-width:760px) {
-    body {
+    body, html {
       width: 100%;
-    } 
+      height: max-content;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
 
     .nav, .header {
       width: 100%;
@@ -1005,9 +1036,13 @@ text-align: center;
 
 @media (max-width: 1080px) {
   @media (min-width:950px) {
-    body {
+    body, html {
       width: 100%;
-    } 
+      height: max-content;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
 
     .nav, .header {
       width: 100%;
@@ -1034,9 +1069,13 @@ text-align: center;
 
 /*medium devices*/
 @media screen and (min-width: 576px) {
-  body {
+  body, html {
     width: 100%;
-  } 
+    height: max-content;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
 
   .nav, .header {
     width: 100%;
@@ -1046,9 +1085,6 @@ text-align: center;
     justify-content: center;
     column-gap: 3rem;
   }
-  body {
-    width: 96%;
-  }
 
   .nav_img {
     width: 45px;
@@ -1057,12 +1093,14 @@ text-align: center;
 }
 
 @media screen and (min-width: 767.10px) {
-  body {
+  body, html {
     width: 100%;
-  } 
-  body {
+    height: max-content;
     margin: 0;
+    padding: 0;
+    overflow-x: hidden;
   }
+
   .section {
     padding: 7rem 0 2rem;
     padding-bottom: 80px;
@@ -1105,9 +1143,13 @@ text-align: center;
 @media screen {
   @media  (max-width: 1000px) {
     @media (min-width: 767px) {
-      body {
-        width: 100%;
-      } 
+     body, html {
+  width: 100%;
+  height: max-content;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 
       .nav, .header {
         width: 100%;
@@ -1131,14 +1173,18 @@ text-align: center;
 
 
 @media screen and (min-width: 1024px) {
-  body {
+  body, html {
     width: 100%;
-  } 
+    height: max-content;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
 
   .nav, .header {
     width: 100%;
   }
-  
+
   .homebg img {
     width: 800px;
   }
