@@ -546,9 +546,10 @@ text-align: center;
 /* =========SKILLS========== */
 
 #skills {
+  margin: 0;
   height: max-content;
   overflow-x: hidden;
-  width: 100%;
+  max-width: 100%;
 }
 
 .sklstxt {
@@ -567,13 +568,13 @@ text-align: center;
 }
 
 .skls_container {
-  width: 93%;
+  max-width: 93%;
   margin-top: 35px;
   row-gap: 0;
 }
 
 .skls_container .skills_header {
-  width: 100%;
+  max-width: 100%;
   cursor: pointer;
 }
 
@@ -695,13 +696,14 @@ text-align: center;
 
 #qualification {
   height: max-content;
+  margin: 0;
 }
 
 .quali_container {
 margin: 0;
 padding: 0;
 padding-top: 20px;
-margin-left: -10px;
+margin-left: 5px;
 width: 100%;
 align-items: center;
 justify-content: center;
@@ -816,6 +818,28 @@ text-align: center;
     transform: translateY(-3px);
     box-shadow: 5px 5px 2px #000;
   }
+
+
+/* =========SERVICES========== */
+#services {
+  height: 100vh;
+  max-height: max-content;
+  margin: 0;
+}
+
+/* =========PORTFOLIO========== */
+#portfolio {
+  height: 100vh;
+  max-height: max-content;
+  margin: 0;
+}
+
+/* =========CONTACT ME========== */
+#contactme {
+  height: 100vh;
+  max-height: max-content;
+  margin: 0;
+}
 
 
 /*media queries | responsive */
