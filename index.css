@@ -398,6 +398,7 @@ h3.nav_name {
     font-size: 35px;
     font-family: 'Poppins', sans-serif;
     margin-bottom: 3px;
+    margin-top: -18px;
 }
 
 .abtconatiner {
@@ -546,6 +547,8 @@ text-align: center;
 
 #skills {
   height: max-content;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 .sklstxt {
@@ -610,10 +613,10 @@ text-align: center;
 }
 
 .skls_list {
-  padding-right: 15px;
+  padding-right: 30px;
   margin-bottom: 2rem;
   row-gap: 1.5rem; 
-  padding-left: 3.7rem;
+  padding-left: 3.5rem;
 }
 
 .skls_titles {
@@ -687,6 +690,133 @@ text-align: center;
 .skills_content.active .skls_arrow {
   transform: rotate(-180deg);
 }
+
+/* =========QUALIFICATIONS========== */
+
+#qualification {
+  height: max-content;
+}
+
+.quali_container {
+margin: 0;
+padding: 0;
+padding-top: 20px;
+margin-left: -10px;
+width: 100%;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+
+.quali_tabs{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+}
+
+.quali_button {
+  font-family: 'Poppins',sans-serif;
+  font-size: 19px;
+  font-weight: 800;
+  color: #e4622b;
+  cursor: pointer;
+}
+
+.quali_button:hover {
+  color: #de2b38;
+}
+
+.quali_icon {
+  font-size: 1.7rem;
+  margin-right: 0.25rem;
+}
+
+.quali_data {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  column-gap: 1.5rem;
+}
+
+.quali_content {
+  padding: 10px;
+}
+
+.quali_title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.quali_subtitle {
+  display: inline-block;
+  font-size: 15px;
+  margin-bottom: 1rem;
+}
+
+.quali_calendar{
+  font-size: 15px;
+}
+
+.quali_rounder {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: #de2b38;
+  border-radius: 50%;
+}
+
+.quali_line {
+  display: block;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient( #e4622b, #de2b38);
+  transform: translate(6px, -7px);
+}
+
+.qualification [data-content] {
+  display: none;
+}
+
+.quali_active[data-content] {
+  display: block;
+}
+
+.quali_button.quali_active{
+  color: #DB0F3F;
+}
+
+
+.qualibtn {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  }
+  
+  .btn-ql {
+    display: flex;
+    gap: 8px;
+    height: 50px;
+    width: 165px;
+    padding: 4x;
+    border-radius: 20px;
+    font-size: 17px;
+    background: linear-gradient( #e4622b, #de2b38);
+    border:#de2b38;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .2s ease;
+  }
+  
+  .btn-ql:hover {
+    background: linear-gradient( #e4622b, #de2b38);
+    border: 3px solid #fff;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 5px 5px 2px #000;
+  }
+
 
 /*media queries | responsive */
 
