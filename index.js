@@ -38,4 +38,22 @@ for (i=0; i<accordion.length; i++) {
 }
 
 
+/* ==============QUALI TAB=============== */
+const tabs = document.querySelectorAll('[data-target]'),
+    tabContents = document.querySelectorAll('[data-content]')
 
+tabs.forEach(tab =>{
+    tab.addEventListener('click', () =>{
+        const target = document.querySelector(tab.dataset.target)
+
+        tabContents.forEach(tabContent =>{
+            tabContent.classList.remove('quali_active')
+        })
+        target.classList.add('quali_active')
+
+        tabs.forEach(tab =>{
+            tab.classList.remove('quali_active')
+        })
+        tab.classList.add('quali_active')
+    })
+})
