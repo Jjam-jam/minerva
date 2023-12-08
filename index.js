@@ -57,3 +57,26 @@ tabs.forEach(tab =>{
         tab.classList.add('quali_active')
     })
 })
+
+/* ==============SRVCS MODAL=============== */
+const modalViews = document.querySelectorAll('.srvcs_modal'),
+    modalBtns = document.querySelectorAll('.srvcs_btn'),
+    modalCloses = document.querySelectorAll('.srvcs_modal-close')
+
+let modal = function(modalClick){
+    modalViews[modalClick].classList.add('active-modal')
+}
+
+modalBtns.forEach((modalBtn, i) =>{
+    modalBtn.addEventListener('click', () =>{
+        modal(i)
+    })
+})
+
+modalCloses.forEach((modalClose) => {
+    modalClose.addEventListener('click', () => {
+        modalViews.forEach((modalViews) => {
+            modalViews.classList.remove('active-modal')
+        })
+    })
+})
