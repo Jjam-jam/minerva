@@ -29,6 +29,7 @@
     /*z index*/
     --z-tooltip: 10;
     --z-fixed: 100;
+    --z-modal: 1000;
 }
 
 @media screen and (min-width: 968px) {
@@ -108,6 +109,27 @@ a {
   max-width: 968px;
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+.button--flex {
+  display: inline-flex;
+  align-items: center;
+}
+
+.button--small {
+  padding: .75rem 1rem;
+}
+
+.button--link {
+  padding: 0;
+  background-color: transparent;
+  color: #e4622b;
+}
+
+.button--link:hover{
+  background-color: transparent;
+  color: #de2b38;
+  font-weight: 600;
 }
 
 
@@ -568,8 +590,9 @@ text-align: center;
 }
 
 .skls_container {
-  max-width: 93%;
+  max-width: 96%;
   margin-top: 35px;
+  padding-left: 15px;
   row-gap: 0;
 }
 
@@ -695,8 +718,10 @@ text-align: center;
 /* =========QUALIFICATIONS========== */
 
 #qualification {
-  height: max-content;
   margin: 0;
+  height: max-content;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 .quali_container {
@@ -822,23 +847,140 @@ text-align: center;
 
 /* =========SERVICES========== */
 #services {
-  height: 100vh;
   max-height: max-content;
+  height: 100vh;
+  max-width: 100%;
   margin: 0;
+}
+
+.services_container {
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  width: 99%;
+  margin-top: 10px;
+}
+
+.srvcs_content {
+  position: relative;
+  background-color: #fdfdfd;
+  color: #353535;
+  padding: 3.5rem .5rem 1.25rem 1.5rem;
+  border-radius: .25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+  transition: .3s;
+}
+
+.srvcs_content:hover {
+  background-color: #000;
+  box-shadow: 4px 4px 8px #e4622b;
+}
+
+.srvcs_content:hover .srvcs_title {
+  color: #fdfdfd;
+}
+
+.srvcs_content:hover .srvc_icon {
+  color: #ff4d00;
+}
+
+.srvc_icon {
+  display: block;
+  font-size: 1.5rem;
+  color: #e4622b;
+  margin-bottom: 1rem;
+}
+
+.srvcs_title {
+  font-size: 25px;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.srvcs_btn {
+  cursor: pointer;
+  font-size: 14px;
+  align-items: center;
+}
+
+.srvcs_btn:hover {
+  gap: 8px;
+}
+
+.srvcs_modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  z-index: var(--z-modal);
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+
+.srvcs_modal-content {
+  position: relative;
+  background-color: #fdfdfd;
+  padding: 1.5rem;
+  border-radius: .5rem;
+}
+
+.srvcs_modal-services{
+  row-gap: .5rem;
+  margin-left: -10px;
+}
+
+.srvcs_modal-service{
+  display: flex;
+}
+
+.srvcs_modal-title {
+  font-size: var(--h2-font-size);
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.srvcs_modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: #DB0F3F;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.srvcs_modal-icon {
+  margin-top: 4px;
+  color: #DB0F3F;
+  margin-right: 0.25rem;
+}
+
+.active-modal {
+  opacity: 1;
+  visibility: visible;
 }
 
 /* =========PORTFOLIO========== */
 #portfolio {
   height: 100vh;
   max-height: max-content;
+  max-width: 100%;
   margin: 0;
 }
 
 /* =========CONTACT ME========== */
 #contactme {
   height: 100vh;
+  max-width: 100%;
   max-height: max-content;
   margin: 0;
+
 }
 
 
@@ -876,6 +1018,9 @@ body, html {
 /* small devices */
 
 @media (max-width:475.99px) {
+  #home {
+    padding-top: 200px;
+  }
   @media (min-width:300px) {
 
     body, html {
@@ -936,17 +1081,28 @@ body, html {
       .section#home {
         height: 100vh;
       }
+
+      .home-container .description{
+        margin-bottom: 30px;
+      }
+
+      .services_container {
+        display: flex;
+        flex-flow: column;
+        width: 93%;
+      }
+
       
     }
 
     @media (min-width:370px) {
     body, html {
-  width: 100%;
-  height: max-content;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
+        width: 100%;
+        height: max-content;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
 
       .container.description p{
         width: 87%;
@@ -990,6 +1146,18 @@ body, html {
      margin-left: 10px;
     }
 
+  }
+}
+
+@media (max-width:370px) {
+  #services{
+    margin-bottom: 410px;
+  }
+}
+
+@media (min-width:370px) {
+  .srvcs2{
+    margin-right: 5px;
   }
 }
 
@@ -1076,10 +1244,14 @@ body, html {
     .section#home {
       height: 100vh;
     }
-/* 
-    #about {
-      min-height: 152vh;
-    } */
+
+   h1.myName{
+      width: 500px;
+    }
+
+    .home-container .description{
+      width: 86%;
+    }
   }
 }
 
@@ -1333,6 +1505,10 @@ body, html {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+  }
+
+  .skls_container {
+    max-width: 50%;
   }
 
   .nav, .header {
