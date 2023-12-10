@@ -1314,6 +1314,15 @@ body, html {
 
 /* small devices */
 
+
+@media (max-width:299px) {
+  .services_container {
+    display: flex;
+    flex-flow: column;
+    width: 93%;
+  }
+}
+
 @media (max-width:475.99px) {
   #home {
     padding-top: 200px;
@@ -1445,6 +1454,8 @@ body, html {
 
   }
 }
+
+
 
 @media (max-width:370px) {
   #services{
