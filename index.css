@@ -994,6 +994,7 @@ text-align: center;
   box-shadow: 4px 5px 8px #ff4d00;
   max-height: max-content;
   width: 90%;
+  height: max-content;
   border-radius: 5px;
 }
 
