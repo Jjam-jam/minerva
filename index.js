@@ -80,3 +80,31 @@ modalCloses.forEach((modalClose) => {
         })
     })
 })
+
+/* =============TO AVOID COPYRIGHT================ */
+
+document.oncontextmenu = () => {
+    alert("Contact me for a copy!")
+    return false;
+}
+
+document.onkeydown = e => {
+    //f12
+    if(e.key == "F12") {
+        alert("Contact me for source code!")
+        return false;
+    }
+
+    //ctrl + u
+    if(e.ctrlKey && e.key == "u") {
+        alert("Contact me for source code!")
+        return false;
+    }
+
+    //copying
+    if(e.ctrlKey && e.key == "c") {
+        alert("Don't try to copy page element!")
+        return false;
+    }
+    
+}
