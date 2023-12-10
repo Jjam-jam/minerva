@@ -1137,9 +1137,8 @@ text-align: center;
 }
 
 .cntct_btn{
-  background: var(--color-grad);
-  padding: 10px;
   font-size: 15px;
+  background: var(--color-grad);
   border-radius: 5px;
   width: 180px;
   text-align: center;
@@ -1155,6 +1154,19 @@ text-align: center;
 
 .cntct_btn:hover .button_icon{ 
   transform: translateX(6px);
+}
+
+.cntct_btn button {
+  background: var(--color-grad);
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin: 5px;
+  color: #fff;
+  padding: 5px;
+  gap: 5px;
+  font-size: 15px;
+  border-radius: 5px;
 }
 
 
@@ -1228,7 +1240,6 @@ footer {
   color: #e6e6e6;
   margin-top: 2rem;
 }
-
 
 
 
