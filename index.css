@@ -280,6 +280,7 @@ h3.nav_name {
 }
 
 .myName {
+  width: 100%;
   font-weight: 600;
   padding-right: 60px;
   color: var(--title-color);
@@ -1321,6 +1322,17 @@ body, html {
     display: flex;
     flex-flow: column;
     width: 93%;
+  }
+}
+
+@media (min-width: 516px) {
+  .home-container {
+    width: 557px;
+  }
+
+  .home-container .description {
+    width: 500px;
+    margin-right: 57px;
   }
 }
 
